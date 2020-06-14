@@ -64,10 +64,62 @@
       
         <section class="hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-content button">Заказать услугу</a>
+          <a class="hero-content button" data-modal-open>Заказать услугу</a>
         </section>
     </div>
   </div>
+  
+  <!-- Мадальное окно формы -->
+          <div class="backdrop is-hidden" data-modal>
+            <form class="modal">
+              <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+          
+              <label class="modal-field">
+                <input type="text" class="modal-input" name="name" placeholder=" ">
+                <span class="modal-label">Имя</span>
+                <svg class="icon-modal" width='18' height='18'>
+                  <use href="./img/sprite.svg#icon-form-name"></use>
+                </svg>
+              </label>
+          
+              <label class="modal-field">
+                <input type="tel" class="modal-input" name="telephone" placeholder=" ">
+                <span class="modal-label">Телефон</span>
+                <svg class="icon-modal" width='18' height='18'>
+                  <use href="./img/sprite.svg#icon-form-tel"></use>
+                </svg>
+              </label>
+          
+              <label class="modal-field">
+                <input type="email" class="modal-input" name="mail" placeholder=" ">
+                <span class="modal-label">Почта</span>
+                <svg class="icon-modal" width='18' height='18'>
+                  <use href="./img/sprite.svg#icon-form-mail"></use>
+                </svg>
+              </label>
+          
+              <label class="modal-field">
+                <textarea name="comment" rows="5" class="modal-comment" placeholder="Оставьте комментарий"></textarea>
+              </label>
+          
+              <label class="modal-field checkbox-label">
+                <input type="checkbox" name="policy" class="modal-policy">
+                <span class="icon-checkbox"></span>
+                <span class="policy-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="policy-link">Условия договора</a>
+                </span>
+              </label>
+          
+              <button type="submit" class="modal-submit">
+                Подписаться
+              </button>
+          
+              <button class="btn-close" data-modal-close>x</button>
+            </form>
+          
+          </div>
+        
       
 <!-- Наши преимущества -->
 
@@ -496,5 +548,7 @@
       
     </div>
   </footer>
+
+  <script src="./modal.js"></script>
   </body>
 </html>
